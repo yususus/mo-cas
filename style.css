@@ -26,3 +26,49 @@
 .social-icons a:hover {
     color: #007bff; /* Hover color for social icons */
 }
+
+
+
+
+/* incele butonuna tıklandığında gerçekleşecekler */
+
+/* Büyütme efekti ve şeffaflaşan arka plan için stil */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Şeffaf arka plan */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-content img {
+    max-width: 400px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.modal-content .description {
+    max-width: 400px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+/* incele butonu son */

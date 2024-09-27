@@ -64,7 +64,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Ürün 1</h5>
                         <p class="card-text">Ürün açıklaması burada olacak.</p>
-                        <a href="#" class="btn btn-primary">İncele</a>
+                        <button class="btn btn-primary review-button" data-image="urun1.jpg" data-description="Ürün 1 açıklaması">İncele</button>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Ürün 2</h5>
                         <p class="card-text">Ürün açıklaması burada olacak.</p>
-                        <a href="#" class="btn btn-primary">İncele</a>
+                        <button class="btn btn-primary review-button" data-image="urun2.jpg" data-description="Ürün 2 açıklaması">İncele</button>
                     </div>
                 </div>
             </div>
@@ -84,13 +84,23 @@
                     <div class="card-body">
                         <h5 class="card-title">Ürün 3</h5>
                         <p class="card-text">Ürün açıklaması burada olacak.</p>
-                        <a href="#" class="btn btn-primary">İncele</a>
+                        <button class="btn btn-primary review-button" data-image="urun3.jpg" data-description="Ürün 3 açıklaması">İncele</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- ürünlerde incele butonuna tıklandıktan sonra oluşan yapı -->
+<!-- Modal Yapısı -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <img src="" alt="Ürün Resmi">
+        <div class="description">Ürün açıklaması burada görünecek.</div>
+    </div>
+    <span class="close">&times;</span>
+</div>
+
 
 <!-- Section: İletişim -->
 <section id="contact" class="p-5 bg-light">
@@ -104,5 +114,8 @@
         </ul>
     </div>
 </section>
+
+<script src="script.js"></script>
+
 </body>
 </html>
