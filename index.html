@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="style.css"> <!-- Style dosyasını dahil ettik -->
+    <link rel="stylesheet" href="/css/style.css"> <!-- Style dosyasını dahil ettik -->
     <title>Mo-cas Mobilya</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -42,14 +42,39 @@
             </div>
         </div>
     </nav>
+    <br>
 <!-- Section: Ana Sayfa -->
-<section id="home" class="p-5 bg-light">
-    <div class="container">
+ <!-- 
+<section id="welcome" class="p-5 bg-light">
+    <div class="container text-center">
         <h1>Hoş Geldiniz Mo-cas</h1>
         <p>En kaliteli mobilyaları burada bulabilirsiniz.</p>
         <button class="btn btn-primary">Hemen İncele</button>
     </div>
 </section>
+-->
+<!-- Karusel yapısı -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" style="height: 100vh;">
+        <div class="carousel-item active">
+            <img src="/images/urun1.jpg" class="d-block w-100" alt="Image 1" style="object-fit: cover; height: 100vh;">
+        </div>
+        <div class="carousel-item">
+            <img src="/images/urun2.jpg" class="d-block w-100" alt="Image 2" style="object-fit: cover; height: 100vh;">
+        </div>
+        <div class="carousel-item">
+            <img src="/images/urun3.jpg" class="d-block w-100" alt="Image 3" style="object-fit: cover; height: 100vh;">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Önceki</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sonraki</span>
+    </button>
+</div>
 
 <!-- Section: Ürünler -->
 <section id="products" class="p-5 bg-white">
@@ -70,7 +95,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="/images/urun2.jpeg" class="card-img-top" alt="Ürün 2">
+                    <img src="/images/urun2.jpg" class="card-img-top" alt="Ürün 2">
                     <div class="card-body">
                         <h5 class="card-title">Ürün 2</h5>
                         <p class="card-text">Ürün açıklaması burada olacak.</p>
@@ -115,7 +140,7 @@
     </div>
 </section>
 
-<script src="script.js"></script>
+<script src="/js/script.js"></script>
 
 </body>
 </html>
