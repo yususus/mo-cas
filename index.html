@@ -5,54 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="/css/style.css"> <!-- Style dosyasını dahil ettik -->
+    <link rel="stylesheet" href="/css/style.css"> 
     <title>Mo-cas Mobilya</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="p-3 m-0 border-0">
 
     <!-- Başlık Menüsü -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Mo-cas Mobilya</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Ana Sayfa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#products">Ürünler</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">İletişim</a>
-                    </li>
-                    <li class="nav-item social-icons">
-                        <a href="https://www.instagram.com" target="_blank" class="nav-link"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com" target="_blank" class="nav-link"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com" target="_blank" class="nav-link"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mo-cas Mobilya</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Ürünler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">İletişim</a>
+                </li>
+                <li class="nav-item social-icons">
+                    <a href="https://www.instagram.com" target="_blank" class="nav-link"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank" class="nav-link"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com" target="_blank" class="nav-link"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
         </div>
-    </nav>
-    <br>
-<!-- Section: Ana Sayfa -->
- <!-- 
-<section id="welcome" class="p-5 bg-light">
-    <div class="container text-center">
-        <h1>Hoş Geldiniz Mo-cas</h1>
-        <p>En kaliteli mobilyaları burada bulabilirsiniz.</p>
-        <button class="btn btn-primary">Hemen İncele</button>
     </div>
-</section>
--->
+</nav>
+
+
 <!-- Karusel yapısı -->
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner" style="height: 100vh;">
@@ -78,18 +69,18 @@
 
 <!-- Section: Ürünler -->
 <section id="products" class="p-5 bg-white">
-    <div class="container">
+    <div class="container" style="height: 100vh;">
         <h2>Ürünlerimiz</h2>
         
-        <!-- Farklı yapılar: Kartlar (Bootstrap card kullanımı) -->
+        
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
                     <img src="/images/urun1.jpg" class="card-img-top" alt="Ürün 1">
                     <div class="card-body">
-                        <h5 class="card-title">Ürün 1</h5>
-                        <p class="card-text">Ürün açıklaması burada olacak.</p>
-                        <button class="btn btn-primary review-button" data-image="urun1.jpg" data-description="Ürün 1 açıklaması">İncele</button>
+                        <h5 class="card-title">Çalışma Masası</h5>
+                        <p class="card-text">Ergonomik tasarımı sayesinde rahatça çalışmaya olanak sağlıyor</p>
+                        <button class="btn btn-primary review-button" data-image="/images/urun1.jpg" data-description="Ürün 1 açıklaması">İncele</button>
                     </div>
                 </div>
             </div>
@@ -97,9 +88,9 @@
                 <div class="card">
                     <img src="/images/urun2.jpg" class="card-img-top" alt="Ürün 2">
                     <div class="card-body">
-                        <h5 class="card-title">Ürün 2</h5>
-                        <p class="card-text">Ürün açıklaması burada olacak.</p>
-                        <button class="btn btn-primary review-button" data-image="urun2.jpg" data-description="Ürün 2 açıklaması">İncele</button>
+                        <h5 class="card-title">Makyaj Masası</h5>
+                        <p class="card-text">Ufak ve kompakt yapısıyla odada az alan kaplar yüksek kullanım imkanı sunar.</p>
+                        <button class="btn btn-primary review-button" data-image="/images/urun2.jpg" data-description="Ürün 2 açıklaması">İncele</button>
                     </div>
                 </div>
             </div>
@@ -107,13 +98,25 @@
                 <div class="card">
                     <img src="/images/urun3.jpg" class="card-img-top" alt="Ürün 3">
                     <div class="card-body">
-                        <h5 class="card-title">Ürün 3</h5>
-                        <p class="card-text">Ürün açıklaması burada olacak.</p>
-                        <button class="btn btn-primary review-button" data-image="urun3.jpg" data-description="Ürün 3 açıklaması">İncele</button>
+                        <h5 class="card-title">Orta Sehpa</h5>
+                        <p class="card-text">Yüksek ergonomisi sayesinden yüksek kullanılabilirlik sunar.</p>
+                        <button class="btn btn-primary review-button" data-image="/images/urun3.jpg" data-description="Ürün 3 açıklaması">İncele</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+<!-- Section: İletişim -->
+<section id="contact" class="p-5" style="background-color: #e1c9a4;">
+    <div class="container">
+        <h2>İletişim Bilgilerimiz</h2>
+        <p>Bizimle aşağıdaki bilgiler üzerinden iletişime geçebilirsiniz:</p>
+        <ul class="list-unstyled">
+            <li><strong>Adres:</strong> Örnek Mahallesi, Mobilya Sokak No: 123, İstanbul</li>
+            <li><strong>Telefon:</strong> <a href="tel:+905555555555">+90 555 555 55 55</a></li>
+            <li><strong>Email:</strong> <a href="mailto:info@mo-cas.com">info@mo-cas.com</a></li>
+        </ul>
     </div>
 </section>
 <!-- ürünlerde incele butonuna tıklandıktan sonra oluşan yapı -->
@@ -127,18 +130,8 @@
 </div>
 
 
-<!-- Section: İletişim -->
-<section id="contact" class="p-5 bg-light">
-    <div class="container">
-        <h2>İletişim Bilgilerimiz</h2>
-        <p>Bizimle aşağıdaki bilgiler üzerinden iletişime geçebilirsiniz:</p>
-        <ul class="list-unstyled">
-            <li><strong>Adres:</strong> Örnek Mahallesi, Mobilya Sokak No: 123, İstanbul</li>
-            <li><strong>Telefon:</strong> <a href="tel:+905555555555">+90 555 555 55 55</a></li>
-            <li><strong>Email:</strong> <a href="mailto:info@mo-cas.com">info@mo-cas.com</a></li>
-        </ul>
-    </div>
-</section>
+
+
 
 <script src="/js/script.js"></script>
 

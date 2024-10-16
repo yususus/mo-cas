@@ -1,5 +1,7 @@
-.navbar {
-    background-color: #f8f9fa;
+body {
+    background-color: #EADDCA;
+    padding-top: 76px; 
+
 }
 
 .navbar-brand {
@@ -10,11 +12,13 @@
 .nav-link {
     color: #495057;
     padding: 15px 20px;
+    transition: color 0.3s, font-weight 0.3s;
 }
 
 .nav-link:hover {
-    background-color: #e9ecef;
-    border-radius: 5px;
+    color: #000000;
+    font-weight: bold;
+    background-color: transparent;
 }
 
 .social-icons a {
@@ -77,3 +81,15 @@
     cursor: pointer;
 }
 /* incele butonu son */
+
+.custom-navbar {
+    width: 100vw;
+    margin: 0 auto;
+    background-color: #EADDCA;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    position: sticky;
+    top: 0; 
+}
+
