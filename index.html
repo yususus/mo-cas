@@ -1,134 +1,238 @@
 <!doctype html>
 <html lang="tr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" href="/css/style.css">
     <title>Mo-cas Mobilya</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
 
     <!-- Başlık Menüsü -->
-<nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Mo-cas Mobilya</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mo-cas Mobilya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">İletişim</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank" class="nav-link"><i
+                                class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank" class="nav-link"><i
+                                class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" target="_blank" class="nav-link"><i
+                                class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com" target="_blank" class="nav-link"><i
+                                class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Karusel yapısı -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="height: 100vh; width: 100vw;">
+            <div class="carousel-item active">
+                <img src="/images/urun1.jpg" class="d-block w-100" alt="Image 1"
+                    style="object-fit: cover; height: 100vh;">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/urun2.jpg" class="d-block w-100" alt="Image 2"
+                    style="object-fit: cover; height: 100vh;">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/urun3.jpg" class="d-block w-100" alt="Image 3"
+                    style="object-fit: cover; height: 100vh;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Önceki</span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Ana Sayfa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#products">Ürünler</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">İletişim</a>
-                </li>
-                <li class="nav-item social-icons">
-                    <a href="https://www.instagram.com" target="_blank" class="nav-link"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com" target="_blank" class="nav-link"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com" target="_blank" class="nav-link"><i class="fab fa-linkedin"></i></a>
-                </li>
-            </ul>
-        </div>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Sonraki</span>
+        </button>
     </div>
-</nav>
 
-<!-- Karusel yapısı -->
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner" style="height: 100vh; width: 100vw;">
-        <div class="carousel-item active">
-            <img src="/images/urun1.jpg" class="d-block w-100" alt="Image 1" style="object-fit: cover; height: 100vh;">
-        </div>
-        <div class="carousel-item">
-            <img src="/images/urun2.jpg" class="d-block w-100" alt="Image 2" style="object-fit: cover; height: 100vh;">
-        </div>
-        <div class="carousel-item">
-            <img src="/images/urun3.jpg" class="d-block w-100" alt="Image 3" style="object-fit: cover; height: 100vh;">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Önceki</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Sonraki</span>
-    </button>
-</div>
-
-<!-- Section: Ürünler -->
-<section id="products" class="p-5 bg-white">
-    <div class="container">
-        <h2>Ürünlerimiz</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/images/urun1.jpg" class="card-img-top" alt="Ürün 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Çalışma Masası</h5>
-                        <p class="card-text">Ergonomik tasarımı sayesinde rahatça çalışmaya olanak sağlıyor</p>
-                        <button class="btn btn-primary review-button" data-image="/images/urun1.jpg" data-description="Ürün 1 açıklaması">İncele</button>
+    <!-- Section: Ürünler -->
+    <section id="products" class="p-5 bg-white">
+        <div class="container">
+            <h2>Ürünlerimiz</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card product-card" data-product-id="1">
+                        <div class="card-content">
+                            <img src="/images/urun1.jpg" class="card-img-top" alt="Ürün 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Çalışma Masası</h5>
+                                <p class="card-text">Ergonomik tasarımı sayesinde rahatça çalışmaya olanak sağlıyor</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/images/urun2.jpg" class="card-img-top" alt="Ürün 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Makyaj Masası</h5>
-                        <p class="card-text">Ufak ve kompakt yapısıyla odada az alan kaplar yüksek kullanım imkanı sunar.</p>
-                        <button class="btn btn-primary review-button" data-image="/images/urun2.jpg" data-description="Ürün 2 açıklaması">İncele</button>
+                <div class="col-md-4">
+                    <div class="card product-card" data-product-id="2">
+                        <div class="card-content">
+                            <img src="/images/urun2.jpg" class="card-img-top" alt="Ürün 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Makyaj Masası</h5>
+                                <p class="card-text">Ufak ve kompakt yapısıyla odada az alan kaplar yüksek kullanım
+                                    imkanı sunar.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/images/urun3.jpg" class="card-img-top" alt="Ürün 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Orta Sehpa</h5>
-                        <p class="card-text">Yüksek ergonomisi sayesinden yüksek kullanılabilirlik sunar.</p>
-                        <button class="btn btn-primary review-button" data-image="/images/urun3.jpg" data-description="Ürün 3 açıklaması">İncele</button>
+                <div class="col-md-4">
+                    <div class="card product-card" data-product-id="3">
+                        <div class="card-content">
+                            <img src="/images/urun3.jpg" class="card-img-top" alt="Ürün 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Orta Sehpa</h5>
+                                <p class="card-text">Yüksek ergonomisi sayesinden yüksek kullanılabilirlik sunar.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Section: İletişim -->
-<section id="contact" class="p-5" style="background-color: #e1c9a4;">
-    <div class="container">
-        <h2>İletişim Bilgilerimiz</h2>
-        <p>Bizimle aşağıdaki bilgiler üzerinden iletişime geçebilirsiniz:</p>
-        <ul class="list-unstyled">
-            <li><strong>Adres:</strong> Örnek Mahallesi, Mobilya Sokak No: 123, İstanbul</li>
-            <li><strong>Telefon:</strong> <a href="tel:+905555555555">+90 555 555 55 55</a></li>
-            <li><strong>Email:</strong> <a href="mailto:info@mo-cas.com">info@mo-cas.com</a></li>
-        </ul>
-    </div>
-</section>
+    <!-- Section: İletişim -->
+    <section id="contact" class="p-5" style="background-color: rgba(56, 62, 66, 0.1);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Şirketimiz Sütunu -->
+                <div class="col-md-3">
+                    <div class="info add-animation-stopped animation-1 text-center">
+                        <h5 class="title">Şirketimiz</h5>
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Ana Sayfa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#products">Ürünler</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">İletişim</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+                <!-- Yardım ve Destek Sütunu -->
+                <div class="col-md-3">
+                    <div class="info add-animation-stopped animation-2 text-center">
+                        <h5 class="title">Yardım ve Destek</h5>
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">İletişim ve Adres</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#">Nasıl Çalışıyoruz</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#">Şirket Politikası</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+                <!-- Takip Edin Sütunu -->
+                <div class="col-md-3">
+                    <div class="info add-animation-stopped animation-4 text-center">
+                        <h5 class="title">Takip Edin</h5>
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="https://www.instagram.com" target="_blank" class="nav-link">
+                                        <i class="fab fa-instagram"></i> Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com" target="_blank" class="nav-link">
+                                        <i class="fab fa-facebook"></i> Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com" target="_blank" class="nav-link">
+                                        <i class="fab fa-twitter"></i> Twitter / X
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com" target="_blank" class="nav-link">
+                                        <i class="fab fa-linkedin"></i> LinkedIn
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright text-center">
+                © 2024 <a class="git" href="https://github.com/yususus" target="_blank">@yususus</a>, made with love
+            </div>
+        </div>
+    </section>
 
-<!-- ürünlerde incele butonuna tıklandıktan sonra oluşan yapı -->
-<!-- Modal Yapısı -->
-<div id="productModal" class="modal">
-    <div class="modal-content">
-        <img src="" alt="Ürün Resmi">
-        <div class="description">Ürün açıklaması burada görünecek.</div>
-    </div>
-    <span class="close">&times;</span>
-</div>
 
-<script src="/js/script.js"></script>
+    <!-- ürünlerde incele butonuna tıklandıktan sonra oluşan yapı -->
+    <!-- Modal yapısı -->
+    <div class="product-modal" id="productModal">
+        <div class="modal-background"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-content">
+                <div class="product-image">
+                    <img src="" alt="Ürün Görseli">
+                </div>
+                <div class="product-details">
+                    <h2 class="product-title"></h2>
+                    <div class="product-description"></div>
+                    <div class="product-specs">
+                        <!-- Ürün özellikleri buraya eklenebilir -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/script.js"></script>
 
 </body>
+
 </html>

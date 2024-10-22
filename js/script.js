@@ -24,37 +24,62 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 
-// Modal açma ve kapatma işlemleri
-const modal = document.getElementById('productModal');
-const closeModalBtn = document.querySelector('.close');
-const reviewButtons = document.querySelectorAll('.review-button');
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.product-card');
+    const modal = document.querySelector('.product-modal');
+    const modalClose = modal.querySelector('.close-modal');
+    const modalBackground = modal.querySelector('.modal-background');
 
-// İncele butonuna tıklandığında modal gösterilecek
-reviewButtons.forEach(button => {
-    button.addEventListener('click', function () {
-        const productImage = this.getAttribute('data-image');
-        const productDescription = this.getAttribute('data-description');
+    cards.forEach(card => {
+        // Tüm karta tıklama eventi ekle
+        card.addEventListener('click', function(e) {
+            // Tıklanan kartın pozisyonunu al
+            const rect = this.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Modal transform origin'i ayarla
+            const transformOriginX = (rect.left + rect.width/2) + 'px';
+            const transformOriginY = (rect.top + rect.height/2 - scrollTop) + 'px';
+            modal.style.setProperty('--modal-transform-origin', `${transformOriginX} ${transformOriginY}`);
+            
+            // Modal içeriğini güncelle
+            const productId = this.dataset.productId;
+            const img = this.querySelector('img').src;
+            const title = this.querySelector('.card-title').textContent;
+            const description = this.querySelector('.card-text').textContent;
+            
+            modal.querySelector('.product-image img').src = img;
+            modal.querySelector('.product-title').textContent = title;
+            modal.querySelector('.product-description').textContent = description;
+            
+            // Modalı aç
+            document.body.style.overflow = 'hidden';
+            modal.classList.add('active');
+            modal.dataset.activeCard = productId;
+        });
+    });
 
-        // Resim ve açıklama modal içerisine yerleştiriliyor
-        modal.querySelector('img').src = productImage;
-        modal.querySelector('.description').innerText = productDescription;
+    // Modalı kapatma fonksiyonu
+    function closeModal() {
+        document.body.style.overflow = '';
+        modal.classList.remove('active');
+        setTimeout(() => {
+            delete modal.dataset.activeCard;
+        }, 500);
+    }
 
-        // Modal görünür yapılıyor
-        modal.style.display = 'flex';
+    modalClose.addEventListener('click', closeModal);
+    modalBackground.addEventListener('click', closeModal);
+    
+    // ESC tuşu ile kapatma
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
     });
 });
 
-// Modalı kapatmak için close butonuna tıklandığında
-closeModalBtn.addEventListener('click', function () {
-    modal.style.display = 'none';
-});
 
-// Modal dışına tıklandığında da modal kapatılsın
-window.addEventListener('click', function (e) {
-    if (e.target === modal) {
-        modal.style.display = 'none';
-    }
-});
 
 
 document.addEventListener('DOMContentLoaded', function() {

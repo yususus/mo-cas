@@ -1,0 +1,16 @@
+/* Carousel stilleri */
+.carousel-inner {
+    margin-top: -80px;
+}
+
+/* Carousel içerik stilleri buraya eklenebilir */
+.carousel-item {
+    position: relative;
+    height: 100vh;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
