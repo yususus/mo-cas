@@ -56,3 +56,19 @@ window.addEventListener('click', function (e) {
     }
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    window.onscroll = function() {
+        var navbar = document.querySelector('.custom-navbar');
+        const scrollHeight = window.scrollY;
+
+    if (scrollHeight > window.innerHeight * 0.5) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+    };
+});
+
+
+
