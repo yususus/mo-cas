@@ -1,16 +1,12 @@
 /* Component imports */
-@import 'navbar.css';
-@import 'carousel.css';
-@import 'product-card.css';
-@import 'modal.css';
+@import '../products/navbar.css';
+@import '../products/mainProduct.css';
+
 
 /* Global styles */
 :root {
     /* Ana renkler */
     --primary-color: #007bff;
-    --text-color: #495057;
-    --background-color: #FFFFFF;
-    --modal-background: #2C2C2C;
     --transition-speed: 0.3s;
 }
 

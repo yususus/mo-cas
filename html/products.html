@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="/css/products/style.css">
+    <title>Mo-cas Mobilya</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Başlık Menüsü -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mo-cas Mobilya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank" class="nav-link"><i
+                                class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank" class="nav-link"><i
+                                class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" target="_blank" class="nav-link"><i
+                                class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com" target="_blank" class="nav-link"><i
+                                class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- Ürünler Bölümü -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Ürünlerimiz</h2>
+        
+        <div class="row g-4">
+            <!-- Ürün 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm position-relative overflow-hidden" style="cursor: pointer;" onclick="openModal(1)">
+                    <img src="/images/urun1.jpg" class="card-img-top h-100 object-fit-cover" alt="Çalışma Masası" style="transition: transform 0.3s ease;">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 opacity-0 h-100" 
+                         style="transition: opacity 0.3s ease;">
+                        <h3 class="card-title text-white">Çalışma Masası</h3>
+                        <p class="card-text text-white mb-0">Detaylar için tıklayın</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ürün 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm position-relative overflow-hidden" style="cursor: pointer;" onclick="openModal(2)">
+                    <img src="/images/urun2.jpg" class="card-img-top h-100 object-fit-cover" alt="Makyaj Masası" style="transition: transform 0.3s ease;">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 opacity-0 h-100" 
+                         style="transition: opacity 0.3s ease;">
+                        <h3 class="card-title text-white">Makyaj Masası</h3>
+                        <p class="card-text text-white mb-0">Detaylar için tıklayın</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ürün 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm position-relative overflow-hidden" style="cursor: pointer;" onclick="openModal(3)">
+                    <img src="/images/urun3.jpg" class="card-img-top h-100 object-fit-cover" alt="Orta Sehpa" style="transition: transform 0.3s ease;">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 opacity-0 h-100" 
+                         style="transition: opacity 0.3s ease;">
+                        <h3 class="card-title text-white">Orta Sehpa</h3>
+                        <p class="card-text text-white mb-0">Detaylar için tıklayın</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <img class="modal-image w-100" src="/images/urun1.jpg" alt="Çalışma Masası Detay">
+                <img class="modal-image w-100" src="/images/urun2.jpg" alt="Makyaj Masası Detay">
+                <img class="modal-image w-100" src="/images/urun3.jpg" alt="Orta Sehpa Detay">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <!-- Section: İletişim -->
+    <section id="contact" class="p-5" style="background-color: rgba(56, 62, 66, 0.1);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Şirketimiz Sütunu -->
+                <div class="col-md-3">
+                    <div class="info add-animation-stopped animation-1 text-center">
+                        <h5 class="title">Şirketimiz</h5>
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li class="nav-item">
+                                    <a class="nav-link"  href="index.html">Ana Sayfa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Ürünler</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">İletişim</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+                <!-- Yardım ve Destek Sütunu -->
+                <div class="col-md-3">
+                    <div class="info add-animation-stopped animation-2 text-center">
+                        <h5 class="title">Yardım ve Destek</h5>
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">İletişim ve Adres</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#">Nasıl Çalışıyoruz</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#">Şirket Politikası</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+                <!-- Takip Edin Sütunu -->
+                <div class="col-md-3">
+                    <div class="info add-animation-stopped animation-4 text-center">
+                        <h5 class="title">Takip Edin</h5>
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="https://www.instagram.com" target="_blank" class="nav-link">
+                                        <i class="fab fa-instagram"></i> Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com" target="_blank" class="nav-link">
+                                        <i class="fab fa-facebook"></i> Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com" target="_blank" class="nav-link">
+                                        <i class="fab fa-twitter"></i> Twitter / X
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com" target="_blank" class="nav-link">
+                                        <i class="fab fa-linkedin"></i> LinkedIn
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright text-center">
+                © 2024 <a class="git" href="https://github.com/yususus" target="_blank">@yususus</a>, made with love
+            </div>
+        </div>
+    </section>
+
+
+   
+
+
+    <script src="../js/products.js"></script>
+
+</body>
+
+</html>

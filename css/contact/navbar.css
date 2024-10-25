@@ -1,0 +1,42 @@
+/* Navbar ana stilleri */
+.custom-navbar {
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    position: sticky;
+    transition: background-color 0.5s ease;
+}
+
+/* Navbar bileşenleri */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #495057;
+    padding: 15px 20px;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+.nav-link:hover {
+    color: #000000;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+/* Sosyal medya ikonları */
+.social-icons a {
+    color: #495057;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
