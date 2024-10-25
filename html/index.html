@@ -81,81 +81,60 @@
         </button>
     </div>
 
-    <!-- Section: Ürünler -->
-    <section id="products" class="p-5 bg-white">
-        <div class="container">
-            <h2>Ürünlerimiz</h2>
-            <div class="row g-5">
-                <div class="col-md-4">
-                    <div class="card product-card" data-product-id="1">
-                        <div class="card-content">
-                            <img src="/images/urun1.jpg" class="card-img-top" alt="Ürün 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Çalışma Masası</h5>
-                                <p class="card-text">Ergonomik tasarımı sayesinde rahatça çalışmaya olanak sağlıyor</p>
-                            </div>
-                        </div>
+<!-- Ürünler Bölümü -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Ürünlerimiz</h2>
+        
+        <div class="row g-4" id="productsContainerIndex">
+            <!-- Ürünler JavaScript ile buraya eklenecek -->
+        </div>
+    </div>
+</section>
+
+<!-- Dinamik Modal -->
+<div class="modal fade" id="productModalIndex" tabindex="-1" aria-labelledby="productModalLabelIndex" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="productModalLabelIndex"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Sol taraf - Resim -->
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <img class="modal-image" src="" alt="">
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card product-card" data-product-id="2">
-                        <div class="card-content">
-                            <img src="/images/urun2.jpg" class="card-img-top" alt="Ürün 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Makyaj Masası</h5>
-                                <p class="card-text">Ufak ve kompakt yapısıyla odada az alan kaplar yüksek kullanım
-                                    imkanı sunar.</p>
-                            </div>
+                    
+                    <!-- Sağ taraf - Özellikler -->
+                    <div class="col-md-6">
+                        <div class="features-list">
+                            <h5 class="mb-3">Ürün Özellikleri:</h5>
+                            <ul class="list-group list-group-flush">
+                                <!-- Özellikler JavaScript ile buraya eklenecek -->
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card product-card" data-product-id="3">
-                        <div class="card-content">
-                            <img src="/images/urun3.jpg" class="card-img-top" alt="Ürün 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Orta Sehpa</h5>
-                                <p class="card-text">Yüksek ergonomisi sayesinden yüksek kullanılabilirlik sunar.</p>
-                            </div>
+                        <div class="mt-4">
+                            <!-- <h5 class="mb-3">Ürün Açıklaması:</h5> -->
+                            <p class="text-muted product-description"></p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card product-card" data-product-id="1">
-                        <div class="card-content">
-                            <img src="/images/urun1.jpg" class="card-img-top" alt="Ürün 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Çalışma Masası</h5>
-                                <p class="card-text">Ergonomik tasarımı sayesinde rahatça çalışmaya olanak sağlıyor</p>
-                            </div>
+                        <!--
+                        <div class="mt-4">
+                            <h5 class="mb-3">Fiyat:</h5>
+                            <p class="h4 text-primary product-price"></p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card product-card" data-product-id="1">
-                        <div class="card-content">
-                            <img src="/images/urun1.jpg" class="card-img-top" alt="Ürün 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Çalışma Masası</h5>
-                                <p class="card-text">Ergonomik tasarımı sayesinde rahatça çalışmaya olanak sağlıyor</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card product-card" data-product-id="1">
-                        <div class="card-content">
-                            <img src="/images/urun1.jpg" class="card-img-top" alt="Ürün 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Çalışma Masası</h5>
-                                <p class="card-text">Ergonomik tasarımı sayesinde rahatça çalışmaya olanak sağlıyor</p>
-                            </div>
-                        </div>
+                        -->
+                        
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+
+
+    
 
     <!-- Section: İletişim -->
     <section id="contact" class="p-5" style="background-color: rgba(56, 62, 66, 0.1);">
@@ -238,31 +217,6 @@
             </div>
         </div>
     </section>
-
-
-    <!-- ürünlerde incele butonuna tıklandıktan sonra oluşan yapı -->
-    <!-- Modal yapısı -->
-    <div class="product-modal" id="productModal">
-        <div class="modal-background"></div>
-        <div class="modal-container">
-            <div class="modal-header">
-                <button class="close-modal">&times;</button>
-            </div>
-            <div class="modal-content">
-                <div class="product-image">
-                    <img src="" alt="Ürün Görseli">
-                </div>
-                <div class="product-details">
-                    <h2 class="product-title"></h2>
-                    <div class="product-description"></div>
-                    <div class="product-specs">
-                        <!-- Ürün özellikleri buraya eklenebilir -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <script src="/js/script.js"></script>
 
