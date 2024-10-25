@@ -59,66 +59,52 @@
     <div class="container">
         <h2 class="text-center mb-5">Ürünlerimiz</h2>
         
-        <div class="row g-4">
-            <!-- Ürün 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm position-relative overflow-hidden" style="cursor: pointer;" onclick="openModal(1)">
-                    <img src="/images/urun1.jpg" class="card-img-top h-100 object-fit-cover" alt="Çalışma Masası" style="transition: transform 0.3s ease;">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 opacity-0 h-100" 
-                         style="transition: opacity 0.3s ease;">
-                        <h3 class="card-title text-white">Çalışma Masası</h3>
-                        <p class="card-text text-white mb-0">Detaylar için tıklayın</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ürün 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm position-relative overflow-hidden" style="cursor: pointer;" onclick="openModal(2)">
-                    <img src="/images/urun2.jpg" class="card-img-top h-100 object-fit-cover" alt="Makyaj Masası" style="transition: transform 0.3s ease;">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 opacity-0 h-100" 
-                         style="transition: opacity 0.3s ease;">
-                        <h3 class="card-title text-white">Makyaj Masası</h3>
-                        <p class="card-text text-white mb-0">Detaylar için tıklayın</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ürün 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm position-relative overflow-hidden" style="cursor: pointer;" onclick="openModal(3)">
-                    <img src="/images/urun3.jpg" class="card-img-top h-100 object-fit-cover" alt="Orta Sehpa" style="transition: transform 0.3s ease;">
-                    <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 opacity-0 h-100" 
-                         style="transition: opacity 0.3s ease;">
-                        <h3 class="card-title text-white">Orta Sehpa</h3>
-                        <p class="card-text text-white mb-0">Detaylar için tıklayın</p>
-                    </div>
-                </div>
-            </div>
+        <div class="row g-4" id="productsContainer">
+            <!-- Ürünler JavaScript ile buraya eklenecek -->
         </div>
     </div>
 </section>
 
-<!-- Modal -->
+<!-- Dinamik Modal -->
 <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content bg-transparent border-0">
+        <div class="modal-content">
             <div class="modal-header border-0">
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="productModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body p-0">
-                <img class="modal-image w-100" src="/images/urun1.jpg" alt="Çalışma Masası Detay">
-                <img class="modal-image w-100" src="/images/urun2.jpg" alt="Makyaj Masası Detay">
-                <img class="modal-image w-100" src="/images/urun3.jpg" alt="Orta Sehpa Detay">
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Sol taraf - Resim -->
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <img class="modal-image" src="" alt="">
+                    </div>
+                    
+                    <!-- Sağ taraf - Özellikler -->
+                    <div class="col-md-6">
+                        <div class="features-list">
+                            <h5 class="mb-3">Ürün Özellikleri:</h5>
+                            <ul class="list-group list-group-flush">
+                                <!-- Özellikler JavaScript ile buraya eklenecek -->
+                            </ul>
+                        </div>
+                        <div class="mt-4">
+                            <!-- <h5 class="mb-3">Ürün Açıklaması:</h5> -->
+                            <p class="text-muted product-description"></p>
+                        </div>
+                        <!--
+                        <div class="mt-4">
+                            <h5 class="mb-3">Fiyat:</h5>
+                            <p class="h4 text-primary product-price"></p>
+                        </div>
+                        -->
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
-
 
 
     <!-- Section: İletişim -->
