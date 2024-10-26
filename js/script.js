@@ -150,7 +150,7 @@ function createProductCards() {
 // Modal'ı aç ve içeriği güncelle
 function openModal(productId) {
     const modal = document.getElementById('productModalIndex');
-    const product = productData[productId];
+    const product = productDataIndex[productId];
     
     // Modal başlığını güncelle
     modal.querySelector('.modal-title').textContent = product.title;
