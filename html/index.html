@@ -12,14 +12,18 @@
 </head>
 
 <body>
+    <!--whatsapp-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=+905389621184&text=Merhaba iyi günler" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
     <!-- Başlık Menüsü -->
     <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
         <div class="container-fluid">
             <a class="navbar-brand">
-            <img src="/images/white.svg" class="d-block w-100" alt="Image 1"
-                    style="object-fit: cover;"></a>
-            
+                <img src="/images/white.svg" class="d-block w-100" alt="Image 1" style="object-fit: cover;"></a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -84,60 +88,61 @@
         </button>
     </div>
 
-<!-- Ürünler Bölümü -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-5">Ürünlerimiz</h2>
-        
-        <div class="row g-4" id="productsContainerIndex">
-            <!-- Ürünler JavaScript ile buraya eklenecek -->
-        </div>
-    </div>
-</section>
+    <!-- Ürünler Bölümü -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Ürünlerimiz</h2>
 
-<!-- Dinamik Modal -->
-<div class="modal fade" id="productModalIndex" tabindex="-1" aria-labelledby="productModalLabelIndex" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header border-0">
-                <h5 class="modal-title" id="productModalLabelIndex"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="row g-4" id="productsContainerIndex">
+                <!-- Ürünler JavaScript ile buraya eklenecek -->
             </div>
-            <div class="modal-body">
-                <div class="row">
-                    <!-- Sol taraf - Resim -->
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <img class="modal-image" src="" alt="">
-                    </div>
-                    
-                    <!-- Sağ taraf - Özellikler -->
-                    <div class="col-md-6">
-                        <div class="features-list">
-                            <h5 class="mb-3">Ürün Özellikleri:</h5>
-                            <ul class="list-group list-group-flush">
-                                <!-- Özellikler JavaScript ile buraya eklenecek -->
-                            </ul>
+        </div>
+    </section>
+
+    <!-- Dinamik Modal -->
+    <div class="modal fade" id="productModalIndex" tabindex="-1" aria-labelledby="productModalLabelIndex"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="productModalLabelIndex"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <!-- Sol taraf - Resim -->
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <img class="modal-image" src="" alt="">
                         </div>
-                        <div class="mt-4">
-                            <!-- <h5 class="mb-3">Ürün Açıklaması:</h5> -->
-                            <p class="text-muted product-description"></p>
-                        </div>
-                        <!--
+
+                        <!-- Sağ taraf - Özellikler -->
+                        <div class="col-md-6">
+                            <div class="features-list">
+                                <h5 class="mb-3">Ürün Özellikleri:</h5>
+                                <ul class="list-group list-group-flush">
+                                    <!-- Özellikler JavaScript ile buraya eklenecek -->
+                                </ul>
+                            </div>
+                            <div class="mt-4">
+                                <!-- <h5 class="mb-3">Ürün Açıklaması:</h5> -->
+                                <p class="text-muted product-description"></p>
+                            </div>
+                            <!--
                         <div class="mt-4">
                             <h5 class="mb-3">Fiyat:</h5>
                             <p class="h4 text-primary product-price"></p>
                         </div>
                         -->
-                        
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
-    
+
 
     <!-- Section: İletişim -->
     <section id="contact" class="p-5" style="background-color: rgba(56, 62, 66, 0.1);">
@@ -162,7 +167,7 @@
                         </nav>
                     </div>
                 </div>
-                
+
                 <!-- Yardım ve Destek Sütunu -->
                 <div class="col-md-3">
                     <div class="info add-animation-stopped animation-2 text-center">
@@ -182,7 +187,7 @@
                         </nav>
                     </div>
                 </div>
-                
+
                 <!-- Takip Edin Sütunu -->
                 <div class="col-md-3">
                     <div class="info add-animation-stopped animation-4 text-center">
